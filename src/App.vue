@@ -87,11 +87,16 @@ export default {
         { name: "Textarea", type: "textarea" },
         { name: "Icon Card", type: "iconcard" }
       ],
-      pagecontent: JSON.parse(localStorage.content)
+      pagecontent: []
     };
   },
-  mounted: {
-
+  created() {
+    let content = window.localStorage.getItem('content');
+    if (content === null || content.length === 0) {
+      localStorage.content = JSON.stringify([])
+    } else {
+      this.pagecontent = JSON.parse(localStorage.content)
+    }
   },
   methods: {
     log: function(evt) {
