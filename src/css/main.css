@@ -1,0 +1,109 @@
+.list-group {
+  min-height: 200px;
+}
+.row {
+  max-width: 1200px;
+  display: flex;
+  margin: auto;
+  width: 100%;
+}
+.sidebar {
+  flex: 0 0 20%;
+}
+pre {
+  white-space: pre-wrap;
+}
+.content {
+  box-sizing: border-box;
+  padding: 0 40px;
+  flex: 0 0 80%;
+}
+.content input, .content select {
+  width: 100%;
+  line-height: 20px;
+  padding: 5px;
+  margin: 0 0 10px;
+  box-sizing: border-box;
+}
+.content textarea {
+  width: 100%;
+  min-height: 200px;
+  line-height: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.content .icon-items textarea {
+  width: 100%;
+  min-height: 100px;
+  line-height: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.list-group-item {
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-top: 1px solid rgba(0,0,0,0.2);
+  border-left: 1px solid rgba(0,0,0,0.2);
+  border-right: 1px solid rgba(0,0,0,0.2);
+  box-sizing: border-box;
+  position: relative;
+}
+.list-group-item:nth-last-of-type(1) {
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.list-group-item:hover {
+  cursor: move;
+  background: #f9f9f9;
+}
+.content .list-group-item {
+  padding: 30px;
+}
+.item-del {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-left: 1px solid rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.item-del:hover {
+  background: #ff0000;
+  color: #fff;
+  cursor: pointer;
+}
+.icon-wrap {
+  display:  flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.icon-items {
+  padding: 5px;
+  box-sizing: border-box;
+  position: relative;
+}
+.icon-items .icon-items-inner {
+  position: relative;
+  padding: 40px 10px 10px;
+  border: 1px solid rgba(0,0,0,0.2);
+}
+.icon-wrap .icon-items {
+  flex: 0 0 100%;
+}
+.icon-wrap.col-2 .icon-items {
+  flex: 0 0 50%;
+}
+.icon-wrap.col-3 .icon-items {
+  flex: 0 0 33.333%;
+}
+.icon-wrap.col-4 .icon-items {
+  flex: 0 0 25%;
+}
+.icon-wrap.col-5 .icon-items {
+  flex: 0 0 20%;
+}
